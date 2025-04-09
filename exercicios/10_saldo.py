@@ -4,10 +4,13 @@
 saldo_total = 0
 
 while True:
-    saldo = input("Digite o seu saldo: ")
+    saldo = input("Digite seu Saldo: ")
+    if saldo == '':
+        break
+    
     saldo_total += float(saldo)
 
-print("A soma de todos valores é igual a: ", soma)
+print("A soma de todos valores é igual a: ", saldo_total)
 
 
 
