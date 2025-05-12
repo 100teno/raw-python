@@ -35,17 +35,30 @@ print("Maior Idade:", max(idades))
 # %%
 gabriel = ["Gabriel Centeno",  
            21, 
-           1,
+           1, 
            "Casado", 
-           1234.80,
+           ["Estagiário", "Data Analyst JR", "Data Analyst Pleno", "Data Analyst Senior"],
+           [1800, 3000, 4000, 5500, 7000],
            ["Dark Souls", "BloodBourne", "Elden Ring"]]
 
 print("Tamanho de gabriel:", len(gabriel))
 
-gabriel[5][2]
+print(gabriel[6][0])
 
-jogos = gabriel[5]
-primeiro_jogo = jogos[0]
+jogos = gabriel[6]
+primeiro_jogo = jogos[1]
 print(primeiro_jogo)
 
 # %%
+
+tamanho = len(gabriel)
+pos = tamanho - 1
+
+
+jogos = gabriel[pos]
+
+gabriel[pos][len(jogos) - 1]
+
+# %%
+
+gabriel[-1][-1]
