@@ -38,6 +38,14 @@ gabriel = ["Gabriel Centeno",
            1,
            "Casado", 
            1234.80,
-           ["Ana", "Maria", "Claudia"]]
+           ["Dark Souls", "BloodBourne", "Elden Ring"]]
 
-print(gabriel[5])
+print("Tamanho de gabriel:", len(gabriel))
+
+gabriel[5][2]
+
+jogos = gabriel[5]
+primeiro_jogo = jogos[0]
+print(primeiro_jogo)
+
+# %%
