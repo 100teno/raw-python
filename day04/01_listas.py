@@ -62,3 +62,15 @@ gabriel[pos][len(jogos) - 1]
 # %%
 
 gabriel[-1][-1]
+
+# %%
+gabriel[4][-2:]
+
+#%%
+
+salarios = gabriel[5]
+salarios[::2]
+
+# gabriel[ start : stop : step]
+
+# print(salarios)
