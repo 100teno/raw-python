@@ -1,0 +1,25 @@
+# Escreva um programa que solicite ao usuário frases. Para parar de solicitar frases,
+# ele pode apenas apertar o "ENTER".
+
+# Seu programa deve apresentar cada frase e quantas vezes ela foi repetida.
+
+# %%
+
+dados = {}  # Dicionário para armazenar as frases e suas contagens
+
+while True:
+    # Solicita uma frase ao usuário
+    entrada = input("Digite uma frase: ")
+    if entrada == "":
+        break
+
+    if entrada not in dados:
+        # Se a frase não estiver no dicionário, adiciona com contagem 1
+        dados[entrada] = 1
+    else:
+        # Se a frase já estiver no dicionário, incrementa a contagem
+        dados[entrada] += 1
+
+for i, j in dados.items():
+    # Exibe a frase e quantas vezes ela foi repetida
+    print(i, "->", j)
