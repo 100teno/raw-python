@@ -20,6 +20,17 @@ while True:
         # Se a frase já estiver no dicionário, incrementa a contagem
         dados[entrada] += 1
 
-for i, j in dados.items():
+
+items = list(dados.items())  # Obtém os itens do dicionário
+items.sort(key=lambda x: x[-1], reverse=True)  # Ordena os itens
+
+for i, j in items:
     # Exibe a frase e quantas vezes ela foi repetida
     print(i, "->", j)
+
+
+
+# A função lambda é usada como chave de ordenação para o método sort()
+# O método sort() ordena a lista de tuplas com base no último elemento (contagem) em ordem decrescente
+# lambda x: x[-1] -> função lambda que retorna o último elemento de cada tupla
+# x[-1] -> último elemento da tupla
