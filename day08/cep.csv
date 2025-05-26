@@ -1,0 +1,11 @@
+;cep;logradouro;complemento;unidade;bairro;localidade;uf;estado;regiao;ibge;gia;ddd;siafi
+0;01001-000;Praça da Sé;lado ímpar;;Sé;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+1;01002-000;Rua Direita;lado par;;Sé;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+2;01003-000;Rua José Bonifácio;lado par;;Sé;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+3;01004-000;Rua Barão de Paranapiacaba;;;Sé;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+4;01005-000;Rua Benjamim Constant;;;Sé;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+5;01006-000;Rua Senador Feijó;lado par;;Sé;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+6;01007-000;Rua Riachuelo;;;Sé;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+7;01008-000;Rua Líbero Badaró;lado par;;Centro;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+8;01009-000;Rua Líbero Badaró;lado ímpar;;Centro;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107
+9;01010-000;Rua São Bento;até 318 - lado par;;Centro;São Paulo;SP;São Paulo;Sudeste;3550308;1004;11;7107

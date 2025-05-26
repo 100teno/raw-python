@@ -3,6 +3,8 @@ import requests # Biblioteca para fazer requisições HTTP
 import json # Biblioteca para trabalhar com JSON
 from tqdm import tqdm # Biblioteca para mostrar o progresso da execução
 
+import pandas as pd # Biblioteca para trabalhar com dados em tabelas
+
 ceps = [
     '01001-000',
     '01002-000',
@@ -18,8 +20,8 @@ ceps = [
 
 
 url = 'https://viacep.com.br/ws/{cep}/json/' # URL com {cep} para ser substituido pelo cep
-#
 dados = []
+
 for i in tqdm(ceps):
     requisicao = requests.get(url.format(cep=i)) # Fazendo a requisição para a API
     # Verifica se a requisição foi bem sucedida
@@ -27,7 +29,12 @@ for i in tqdm(ceps):
         dados.append(requisicao.json())
 
 dados
+ # %%
 
+dataset = pd.DataFrame(dados)
+dataset.to_csv('cep.csv', sep=';') 
+
+# %%
 with open('cep.json', 'w', encoding='utf-8') as open_file:
     json.dump(dados, open_file, indent=4, ensure_ascii=False) # Escrevendo os dados no arquivo JSON
     print("Dados salvos com sucesso!")
